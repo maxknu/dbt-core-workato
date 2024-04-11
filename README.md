@@ -1,10 +1,8 @@
-### dbt Core 
-Dbt core is the free and open source version of dbt by Dbt Labs https://github.com/dbt-labs/dbt-core
-
 ### dbt Cloud
-**This is not a dbt cloud example.** If you are looking for dbt Cloud connector then check the other examples and dbt Cloud from Community Connectors https://app.workato.com/browse/connectors?q=dbt
+**!This is not a dbt cloud example.** If you are looking for dbt Cloud connector then check the dbt Cloud from Community Connector https://app.workato.com/browse/connectors?q=dbt
 
-This this an example recipe which is part of the tutorial on how to setup Workato + dbt core 
+### dbt Core how to
+Dbt core is the free and open source version of dbt by Dbt Labs https://github.com/dbt-labs/dbt-core
 
 **Instructions**
 To run this you will need to:
