@@ -35,4 +35,10 @@ You can do this by picking install for all users on Windows setup screen
 `C:/Workato/.dbt. `
 10. Make sure the OPA service user (default user on windows is 'Local Service') can read / write / execute on the  C:/Workato folder. Right click on folder  &gt; Properties &gt; Security and add Local Service or another user which is running your Workato OnPremise Agent 
 11. Add and Execute script command to your recipe and connect, provide the script details. Check screenshot on [github to get some configuration](https://github.com/maxknu/dbt-core-workato/blob/main/workato-recipe-connector_config.png) examples 
+script body: 
+`python C:\ELT\scripts\dbt-runner.py {{ folder_path}} {{ profile_path}} {{ dbt_command}}`
 12. input 3 parameters, your dbt project, dbt command line "dbt run" and dbt profile directory. [Screenshot example here](https://github.com/maxknu/dbt-core-workato/blob/main/workato-recipe-example_action_config.png) 
+example
+dbt command: `dbt run`
+profile path: `C:\Workato\.dbt`
+folder path: `C:\Workato\dbt-project`
