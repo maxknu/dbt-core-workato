@@ -4,6 +4,15 @@
 ### dbt Core how to
 Dbt core is the free and open source version of dbt by Dbt Labs https://github.com/dbt-labs/dbt-core
 
+**(optional) Install Postgres Server with sample database dvdrental**
+1. download and install latest postgress with pgadmin on your local machine
+2. Open pgadmin and configure you binary path in File > Preferences > Paths > Binary paths > PostgreSQL binary path and point to your installed postgresql bin folder. This is needed to make restores from backups (more about this here [postgrenot able to restore](https://stackoverflow.com/questions/77580180/newbie-to-postgresql-and-i-am-not-able-to-load-restore-sample-database-dvdrenta))
+3. download [dvd rental sample database](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/)
+4. extract it once to get the .tar file
+5. open pgadmin and connect to your local database 
+6. create a new database called 'dvdrental'
+7. right click and restore from downloaded dvdrental.tar file 
+
 **Instructions**
 To run this you will need to:
 1. Setup [OnPremise Agent](https://docs.workato.com/on-prem.html) from Workato 
